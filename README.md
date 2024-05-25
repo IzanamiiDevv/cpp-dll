@@ -7,6 +7,8 @@ this is a basic refferece for using dll on c++
 
 ### DLL Temp
 
+Here is the code for the dll name it into mydll.cpp
+
 ```cpp
 #include "./includes/mydll.h"
 #include <iostream>
@@ -18,6 +20,8 @@ void hello() {
 ```
 
 ### DLL Header
+
+Here is the code for the dll header file and name it into mydll.h
 
 ```h
 #ifndef MYDLL_H
