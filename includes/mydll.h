@@ -8,6 +8,7 @@
 #endif
 
 extern "C" {
+    //Put all the function here
     DLL_EXPORT void hello();
 }
 
