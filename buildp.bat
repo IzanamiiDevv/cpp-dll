@@ -1,0 +1,1 @@
+g++ -o myprog main.cpp -L . -l mydll

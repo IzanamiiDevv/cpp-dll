@@ -1,0 +1,1 @@
+g++ -shared -o mydll.dll mydll.cpp -Wl,--out-implib,libmydll.a
