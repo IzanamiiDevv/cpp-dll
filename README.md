@@ -34,7 +34,7 @@ extern "C" {
     DLL_EXPORT void hello();
 }
 
-#endif // MYDLL_H
+#endif
 
 ```
 
@@ -45,7 +45,21 @@ extern "C" {
 g++ -shared -o mydll.dll mydll.cpp -Wl,--out-implib,libmydll.a
 ```
 
+This command does the following:
+
+- -shared tells the compiler to create a shared library.
+
+- -o mydll.dll specifies the output file name.
+
+- -Wl,--out-implib,libmydll.a creates an import library libmydll.a which is necessary for linking against the DLL in another project.
+
 ### compile program
 ```bat
 g++ -o myprog main.cpp -L . -l mydll
 ```
+
+This command does the following:
+
+- -L . tells the compiler to look for libraries code the argument "." is telling the compiler to search in the current directory.
+
+- -l mydll tells the compiler to link against libmydll.a (the import library).

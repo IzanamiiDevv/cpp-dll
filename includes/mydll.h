@@ -12,4 +12,4 @@ extern "C" {
     DLL_EXPORT void hello();
 }
 
-#endif // MYDLL_H
+#endif
